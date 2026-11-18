@@ -1,7 +1,9 @@
 # k8s-lab
 
 My first Kubernetes tests, on a single-node k3s cluster
-(Ubuntu Server VM on VirtualBox). Lab only, not production.
+(Ubuntu Server VM on VirtualBox).
+
+Lab only, not production.
 
 ## Files
 - `01_nginx.yml`: nginx Deployment (3 replicas)
