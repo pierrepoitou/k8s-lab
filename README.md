@@ -1,18 +1,18 @@
 # k8s-lab
 
-Mes premiers tests Kubernetes, sur un cluster k3s mono-noeud
-(VM Ubuntu Server sous VirtualBox).
+My first Kubernetes tests, on a single-node k3s cluster
+(Ubuntu Server VM on VirtualBox).
 
-## Fichiers
-- 01_nginx.yml : Deployment nginx (3 replicas)
-- 02_service.yml : Service NodePort (port 30080) pour acceder a nginx hors du cluster
+## Files
+- 01_nginx.yml: nginx Deployment (3 replicas)
+- 02_service.yml: NodePort Service (port 30080) to reach nginx from outside the cluster
 
-## Ce que j'ai fait
-- Installation de k3s
-- Deploiement de nginx avec un manifest YAML
-- Passage de 1 a 3 replicas en modifiant le fichier puis kubectl apply
-- Test d'auto-reparation : suppression d'un pod, recreation automatique
-- Acces a nginx depuis un PC Windows via l'IP de la VM contenant le cluster soit 192.168.1.25:30080
+## What I did
+- Installed k3s
+- Deployed nginx from a YAML manifest
+- Scaled from 1 to 3 replicas by editing the file and running kubectl apply
+- Self-healing test: deleted a pod, it was recreated automatically
+- Accessed nginx from a Windows PC through the VM's IP (192.168.1.25:30080)
 
-## A venir
-Namespaces, Ingress, volumes persistants...
+## Next
+Namespaces, Ingress, persistent volumes.
